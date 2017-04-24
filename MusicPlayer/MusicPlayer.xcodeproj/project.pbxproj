@@ -12,7 +12,60 @@
 		CEE1AD471EAE566200201C76 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEE1AD451EAE566200201C76 /* Main.storyboard */; };
 		CEE1AD491EAE566200201C76 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEE1AD481EAE566200201C76 /* Assets.xcassets */; };
 		CEE1AD4C1EAE566200201C76 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEE1AD4A1EAE566200201C76 /* LaunchScreen.storyboard */; };
+		CEE1AD591EAE57A400201C76 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEE1AD571EAE57A400201C76 /* Interface.storyboard */; };
+		CEE1AD5B1EAE57A400201C76 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEE1AD5A1EAE57A400201C76 /* Assets.xcassets */; };
+		CEE1AD621EAE57A500201C76 /* WatchMusicPlayer Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = CEE1AD611EAE57A400201C76 /* WatchMusicPlayer Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		CEE1AD691EAE57A500201C76 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE1AD681EAE57A500201C76 /* InterfaceController.swift */; };
+		CEE1AD6B1EAE57A500201C76 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE1AD6A1EAE57A500201C76 /* ExtensionDelegate.swift */; };
+		CEE1AD6D1EAE57A500201C76 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE1AD6C1EAE57A500201C76 /* NotificationController.swift */; };
+		CEE1AD6F1EAE57A500201C76 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEE1AD6E1EAE57A500201C76 /* Assets.xcassets */; };
+		CEE1AD731EAE57A500201C76 /* WatchMusicPlayer.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = CEE1AD551EAE57A400201C76 /* WatchMusicPlayer.app */; };
+		CEE1AD801EAE62E300201C76 /* Banno.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CEE1AD7D1EAE62E300201C76 /* Banno.mp3 */; };
+		CEE1AD811EAE62E300201C76 /* Hero.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CEE1AD7E1EAE62E300201C76 /* Hero.mp3 */; };
+		CEE1AD821EAE62E300201C76 /* Veer.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CEE1AD7F1EAE62E300201C76 /* Veer.mp3 */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CEE1AD631EAE57A500201C76 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEE1AD361EAE566100201C76 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CEE1AD601EAE57A400201C76;
+			remoteInfo = "WatchMusicPlayer Extension";
+		};
+		CEE1AD711EAE57A500201C76 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEE1AD361EAE566100201C76 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CEE1AD541EAE57A400201C76;
+			remoteInfo = WatchMusicPlayer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CEE1AD771EAE57A500201C76 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				CEE1AD621EAE57A500201C76 /* WatchMusicPlayer Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEE1AD7B1EAE57A500201C76 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				CEE1AD731EAE57A500201C76 /* WatchMusicPlayer.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		CEE1AD3E1EAE566200201C76 /* MusicPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusicPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,10 +75,31 @@
 		CEE1AD481EAE566200201C76 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CEE1AD4B1EAE566200201C76 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CEE1AD4D1EAE566200201C76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEE1AD551EAE57A400201C76 /* WatchMusicPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatchMusicPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEE1AD581EAE57A400201C76 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		CEE1AD5A1EAE57A400201C76 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CEE1AD5C1EAE57A400201C76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEE1AD611EAE57A400201C76 /* WatchMusicPlayer Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "WatchMusicPlayer Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEE1AD671EAE57A500201C76 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		CEE1AD681EAE57A500201C76 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		CEE1AD6A1EAE57A500201C76 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		CEE1AD6C1EAE57A500201C76 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		CEE1AD6E1EAE57A500201C76 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CEE1AD701EAE57A500201C76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEE1AD7D1EAE62E300201C76 /* Banno.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Banno.mp3; sourceTree = "<group>"; };
+		CEE1AD7E1EAE62E300201C76 /* Hero.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Hero.mp3; sourceTree = "<group>"; };
+		CEE1AD7F1EAE62E300201C76 /* Veer.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Veer.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		CEE1AD3B1EAE566100201C76 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEE1AD5E1EAE57A400201C76 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,6 +113,8 @@
 			isa = PBXGroup;
 			children = (
 				CEE1AD401EAE566200201C76 /* MusicPlayer */,
+				CEE1AD561EAE57A400201C76 /* WatchMusicPlayer */,
+				CEE1AD651EAE57A500201C76 /* WatchMusicPlayer Extension */,
 				CEE1AD3F1EAE566200201C76 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +123,8 @@
 			isa = PBXGroup;
 			children = (
 				CEE1AD3E1EAE566200201C76 /* MusicPlayer.app */,
+				CEE1AD551EAE57A400201C76 /* WatchMusicPlayer.app */,
+				CEE1AD611EAE57A400201C76 /* WatchMusicPlayer Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -54,6 +132,7 @@
 		CEE1AD401EAE566200201C76 /* MusicPlayer */ = {
 			isa = PBXGroup;
 			children = (
+				CEE1AD7C1EAE62D000201C76 /* Resource */,
 				CEE1AD411EAE566200201C76 /* AppDelegate.swift */,
 				CEE1AD431EAE566200201C76 /* ViewController.swift */,
 				CEE1AD451EAE566200201C76 /* Main.storyboard */,
@@ -62,6 +141,47 @@
 				CEE1AD4D1EAE566200201C76 /* Info.plist */,
 			);
 			path = MusicPlayer;
+			sourceTree = "<group>";
+		};
+		CEE1AD561EAE57A400201C76 /* WatchMusicPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				CEE1AD571EAE57A400201C76 /* Interface.storyboard */,
+				CEE1AD5A1EAE57A400201C76 /* Assets.xcassets */,
+				CEE1AD5C1EAE57A400201C76 /* Info.plist */,
+			);
+			path = WatchMusicPlayer;
+			sourceTree = "<group>";
+		};
+		CEE1AD651EAE57A500201C76 /* WatchMusicPlayer Extension */ = {
+			isa = PBXGroup;
+			children = (
+				CEE1AD681EAE57A500201C76 /* InterfaceController.swift */,
+				CEE1AD6A1EAE57A500201C76 /* ExtensionDelegate.swift */,
+				CEE1AD6C1EAE57A500201C76 /* NotificationController.swift */,
+				CEE1AD6E1EAE57A500201C76 /* Assets.xcassets */,
+				CEE1AD701EAE57A500201C76 /* Info.plist */,
+				CEE1AD661EAE57A500201C76 /* Supporting Files */,
+			);
+			path = "WatchMusicPlayer Extension";
+			sourceTree = "<group>";
+		};
+		CEE1AD661EAE57A500201C76 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CEE1AD671EAE57A500201C76 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CEE1AD7C1EAE62D000201C76 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				CEE1AD7D1EAE62E300201C76 /* Banno.mp3 */,
+				CEE1AD7E1EAE62E300201C76 /* Hero.mp3 */,
+				CEE1AD7F1EAE62E300201C76 /* Veer.mp3 */,
+			);
+			name = Resource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,15 +194,51 @@
 				CEE1AD3A1EAE566100201C76 /* Sources */,
 				CEE1AD3B1EAE566100201C76 /* Frameworks */,
 				CEE1AD3C1EAE566100201C76 /* Resources */,
+				CEE1AD7B1EAE57A500201C76 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				CEE1AD721EAE57A500201C76 /* PBXTargetDependency */,
 			);
 			name = MusicPlayer;
 			productName = MusicPlayer;
 			productReference = CEE1AD3E1EAE566200201C76 /* MusicPlayer.app */;
 			productType = "com.apple.product-type.application";
+		};
+		CEE1AD541EAE57A400201C76 /* WatchMusicPlayer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEE1AD781EAE57A500201C76 /* Build configuration list for PBXNativeTarget "WatchMusicPlayer" */;
+			buildPhases = (
+				CEE1AD531EAE57A400201C76 /* Resources */,
+				CEE1AD771EAE57A500201C76 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CEE1AD641EAE57A500201C76 /* PBXTargetDependency */,
+			);
+			name = WatchMusicPlayer;
+			productName = WatchMusicPlayer;
+			productReference = CEE1AD551EAE57A400201C76 /* WatchMusicPlayer.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		CEE1AD601EAE57A400201C76 /* WatchMusicPlayer Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEE1AD741EAE57A500201C76 /* Build configuration list for PBXNativeTarget "WatchMusicPlayer Extension" */;
+			buildPhases = (
+				CEE1AD5D1EAE57A400201C76 /* Sources */,
+				CEE1AD5E1EAE57A400201C76 /* Frameworks */,
+				CEE1AD5F1EAE57A400201C76 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "WatchMusicPlayer Extension";
+			productName = "WatchMusicPlayer Extension";
+			productReference = CEE1AD611EAE57A400201C76 /* WatchMusicPlayer Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -95,6 +251,14 @@
 				ORGANIZATIONNAME = Bhavesh;
 				TargetAttributes = {
 					CEE1AD3D1EAE566100201C76 = {
+						CreatedOnToolsVersion = 8.2;
+						ProvisioningStyle = Automatic;
+					};
+					CEE1AD541EAE57A400201C76 = {
+						CreatedOnToolsVersion = 8.2;
+						ProvisioningStyle = Automatic;
+					};
+					CEE1AD601EAE57A400201C76 = {
 						CreatedOnToolsVersion = 8.2;
 						ProvisioningStyle = Automatic;
 					};
@@ -114,6 +278,8 @@
 			projectRoot = "";
 			targets = (
 				CEE1AD3D1EAE566100201C76 /* MusicPlayer */,
+				CEE1AD541EAE57A400201C76 /* WatchMusicPlayer */,
+				CEE1AD601EAE57A400201C76 /* WatchMusicPlayer Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -123,9 +289,29 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEE1AD821EAE62E300201C76 /* Veer.mp3 in Resources */,
 				CEE1AD4C1EAE566200201C76 /* LaunchScreen.storyboard in Resources */,
+				CEE1AD801EAE62E300201C76 /* Banno.mp3 in Resources */,
+				CEE1AD811EAE62E300201C76 /* Hero.mp3 in Resources */,
 				CEE1AD491EAE566200201C76 /* Assets.xcassets in Resources */,
 				CEE1AD471EAE566200201C76 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEE1AD531EAE57A400201C76 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEE1AD5B1EAE57A400201C76 /* Assets.xcassets in Resources */,
+				CEE1AD591EAE57A400201C76 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEE1AD5F1EAE57A400201C76 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEE1AD6F1EAE57A500201C76 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,7 +327,30 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CEE1AD5D1EAE57A400201C76 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEE1AD6D1EAE57A500201C76 /* NotificationController.swift in Sources */,
+				CEE1AD6B1EAE57A500201C76 /* ExtensionDelegate.swift in Sources */,
+				CEE1AD691EAE57A500201C76 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CEE1AD641EAE57A500201C76 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CEE1AD601EAE57A400201C76 /* WatchMusicPlayer Extension */;
+			targetProxy = CEE1AD631EAE57A500201C76 /* PBXContainerItemProxy */;
+		};
+		CEE1AD721EAE57A500201C76 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CEE1AD541EAE57A400201C76 /* WatchMusicPlayer */;
+			targetProxy = CEE1AD711EAE57A500201C76 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		CEE1AD451EAE566200201C76 /* Main.storyboard */ = {
@@ -158,6 +367,14 @@
 				CEE1AD4B1EAE566200201C76 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		CEE1AD571EAE57A400201C76 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEE1AD581EAE57A400201C76 /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -278,6 +495,72 @@
 			};
 			name = Release;
 		};
+		CEE1AD751EAE57A500201C76 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				INFOPLIST_FILE = "WatchMusicPlayer Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.MusicPlayer.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Debug;
+		};
+		CEE1AD761EAE57A500201C76 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				INFOPLIST_FILE = "WatchMusicPlayer Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.MusicPlayer.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Release;
+		};
+		CEE1AD791EAE57A500201C76 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				IBSC_MODULE = WatchMusicPlayer_Extension;
+				INFOPLIST_FILE = WatchMusicPlayer/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.MusicPlayer.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Debug;
+		};
+		CEE1AD7A1EAE57A500201C76 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				IBSC_MODULE = WatchMusicPlayer_Extension;
+				INFOPLIST_FILE = WatchMusicPlayer/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.MusicPlayer.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -295,6 +578,22 @@
 			buildConfigurations = (
 				CEE1AD511EAE566200201C76 /* Debug */,
 				CEE1AD521EAE566200201C76 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CEE1AD741EAE57A500201C76 /* Build configuration list for PBXNativeTarget "WatchMusicPlayer Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEE1AD751EAE57A500201C76 /* Debug */,
+				CEE1AD761EAE57A500201C76 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CEE1AD781EAE57A500201C76 /* Build configuration list for PBXNativeTarget "WatchMusicPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEE1AD791EAE57A500201C76 /* Debug */,
+				CEE1AD7A1EAE57A500201C76 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
